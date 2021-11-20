@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App"> 
-      <h1>Hello from react</h1>
+      <h1 style={{color: 'red', backgroundColor: 'black'}}>Hello from react</h1>
       <h2>heheh... {name} </h2>
       <Header title='leti' />
 

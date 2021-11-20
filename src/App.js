@@ -1,5 +1,4 @@
 //import logo from './logo.svg';
-import './App.css';
 import Header from './components/Header';
 
 function App() {
@@ -7,10 +6,8 @@ function App() {
   const name = 'Cyatile'
 
   return (
-    <div className="App"> 
-      <h1 style={headingStyle}>Hello from react</h1>
-      <h2>heheh... {name} </h2>
-      <Header title='leti' />
+    <div className="container"> 
+      <Header title={name} />
 
 {/*    <header className="App-header">
 //        <img src={logo} className="App-logo" alt="logo" />
@@ -26,15 +23,12 @@ function App() {
 //          Learn React
 //        </a>
 //      </header>
-  */}
+*/}
     </div>
   );
 }
 
 
-const headingStyle = {
-  color: 'red', 
-  backgroundColor: 'black'
-}
+
 
 export default App;

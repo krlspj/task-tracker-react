@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App"> 
-      <h1 style={{color: 'red', backgroundColor: 'black'}}>Hello from react</h1>
+      <h1 style={headingStyle}>Hello from react</h1>
       <h2>heheh... {name} </h2>
       <Header title='leti' />
 
@@ -29,6 +29,12 @@ function App() {
   */}
     </div>
   );
+}
+
+
+const headingStyle = {
+  color: 'red', 
+  backgroundColor: 'black'
 }
 
 export default App;

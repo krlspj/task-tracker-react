@@ -86,7 +86,7 @@ function App() {
             exact
             element={<BodyTasks />}
           />
-          <Route path='/about' element={<About />} />
+          <Route path='/about' element={<About /> } />
         </Routes>
 
         <Footer />

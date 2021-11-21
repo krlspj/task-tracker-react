@@ -1,14 +1,14 @@
-//import logo from './logo.svg';
 import Header from './components/Header'
 import { useState } from "react"
 import Tasks from './components/Tasks';
 import AddTask from './components/AddTask';
+import Footer from './components/Footer'
 
 
 
 function App() {
   //const n1 = prompt('type ur name')
-  const name = 'Cyatile'
+  const [showAddTask, setShowAddTask] = useState(false)
 
   const [tasks,setTasks] = useState([
     {
@@ -46,8 +46,11 @@ function App() {
 
   return (
     <div className="container"> 
-      <Header title={name} />
-      <AddTask onAdd={addTask} /> 
+      <Header title='task tracker' 
+        onAdd={() => setShowAddTask(!showAddTask)}
+        showAdd={showAddTask}   
+      />
+      { showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ? (
         <Tasks 
           tasks={tasks} 
@@ -57,6 +60,8 @@ function App() {
       ) : (
         'No tasks to show'
       )}
+      
+      <Footer />
 
 {/*    <header className="App-header">
 //        <img src={logo} className="App-logo" alt="logo" />

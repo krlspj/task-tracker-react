@@ -1,7 +1,7 @@
 import Header from './components/Header'
 import { useState } from "react"
 import Tasks from './components/Tasks';
-import AddTask from './components/AddTask';
+import AddTask from './components/AddTask'
 import Footer from './components/Footer'
 import About from './components/About'
 import { BrowserRouter as BRouter, Routes,
@@ -12,18 +12,7 @@ function App() {
   //const n1 = prompt('type ur name')
   const [showAddTask, setShowAddTask] = useState(false)
   const [tasks,setTasks] = useState([
-    {
-      id: 1,
-      text: 'Doctor appointment',
-      day: 'Feb 5th at 2:30pm',
-      reminder: true
-    },
-    {
-      id: 2,
-      text: 'stuff',
-      day: 'Feb 1th at 2:30pm',
-      reminder: true
-    }
+    
   ])
 
   // Delete task

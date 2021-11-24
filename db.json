@@ -11,6 +11,12 @@
       "day": "21:00 ",
       "reminder": true,
       "id": 2
+    },
+    {
+      "text": "golang backend",
+      "day": "2021 11 23 23:00",
+      "reminder": "false",
+      "id": 3
     }
   ],
   "comments": [
